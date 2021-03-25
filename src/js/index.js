@@ -1,4 +1,4 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -6,15 +6,21 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-const addButton = document.querySelector('.add--js');
-//const deleteButton = document.querySelector('.delete--js');
-//const numberGlasses = document.querySelector('.glasses--js');
+const addWater = document.querySelector(".add--js");
+const deleteWater = document.querySelector(".delete--js");
+const numberGlasses = document.querySelector(".glasses--js");
 
-//let Water = 1;
+let currentWater = 0;
 
-//function addWater(Water) {
-//    Water++;
- //   numberGlasses.innerHTML = Water++;
-//};
 
-//addButton.addEventListener('click', addWater);
+addWater.addEventListener("click", () => {
+    currentWater++;
+    numberGlasses.innerHTML = currentWater;
+});
+
+deleteWater.addEventListener('click', () => {
+    if (currentWater > 0) {
+    currentWater--;
+    }
+    numberGlasses.innerHTML = currentWater;
+})
