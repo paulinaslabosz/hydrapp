@@ -20,8 +20,8 @@ body {
 
 main {
   background: #3767ad;
-  max-width: 375px;
-  max-height: 812px;
+  min-width: 375px;
+  min-height: 812px;
 }
 
 .title {
