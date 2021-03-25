@@ -1,42 +1,52 @@
 @import "~normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 main {
-  background: #3767AD;
+  background: #3767ad;
   max-width: 375px;
   max-height: 812px;
 }
 
 .title {
-font-size: 55px;
-color: #ffff;
-margin: 87px 50px 68px 50px;
-display: flex;
-justify-content: center;
+  font-size: 55px;
+  color: #ffff;
+  margin: 87px 50px 68px 50px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.68;
 }
 
 .button {
-  display: flex;
-  justify-content: center;
+  
 }
 
 .button__add {
   display: block;
   width: 216px;
   height: 47px;
-  background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 4px;
-font-size: 18px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 48px;
 }
 
 .button__delete {
@@ -46,5 +56,14 @@ font-size: 18px;
   background: none;
   border: none;
   font-size: 14px;
-  color: #F5E5E7;
+  color: #f5e5e7;
+  margin: auto;
+  margin-top: 37px;
+  
+  
+}
+
+.image {
+  display: flex;
+  margin: auto;
 }
