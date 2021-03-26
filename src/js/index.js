@@ -9,18 +9,29 @@ import "../scss/main.scss";
 const addWater = document.querySelector(".add--js");
 const deleteWater = document.querySelector(".delete--js");
 const numberGlasses = document.querySelector(".glasses--js");
+const key = new Date().toLocaleString().slice(0, 10);
+const localStorageValue = localStorage.getItem(key);
 
 let currentWater = 0;
 
+if (localStorageValue) {
+  currentWater = localStorageValue;
+} else {
+  localStorage.setItem(key, 0);
+}
+numberGlasses.innerHTML = currentWater;
 
 addWater.addEventListener("click", () => {
-    currentWater++;
-    numberGlasses.innerHTML = currentWater;
+  currentWater++;
+  numberGlasses.innerHTML = currentWater;
+  localStorage.setItem(key, currentWater);
 });
 
-deleteWater.addEventListener('click', () => {
-    if (currentWater > 0) {
+deleteWater.addEventListener("click", () => {
+  if (currentWater > 0) {
     currentWater--;
-    }
-    numberGlasses.innerHTML = currentWater;
-})
+  }
+  numberGlasses.innerHTML = currentWater;
+  localStorage.setItem(key, currentWater);
+});
+
