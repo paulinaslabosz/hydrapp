@@ -1,18 +1,18 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://paulinaslabosz.github.io/hydrapp/og.png)
 
-# WTF Webpack Starter Kit 
 
-Simple toolkit for your static websites development.
+# hydrapp 
+
+Simple application created to help people drink more water.
+
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Click on `dodaj szklankę` to add one cup of water you drunk, a=click on `usuń szklankę` to delete the cup. The all cups are saved in your local strage and turn to 0 when new day starts. 
 
-## Available scripts
+## Additional description
 
-`npm run start` - runs development mode
+The application was created with Maciej Korsan's WTF: Co ten frontend course.
 
-`npm run build` - runs build process for production
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
