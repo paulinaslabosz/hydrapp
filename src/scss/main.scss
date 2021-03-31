@@ -24,7 +24,8 @@ body {
 main {
   background: #3767ad;
   min-width: 375px;
-  min-height: 812px;
+  min-height: 750px;
+  padding: 16px;
 }
 
 .title {
@@ -38,8 +39,7 @@ main {
 
 
 .info {
-  padding: 16px;
-  &__icon {
+    &__icon {
     height: 60px;
     width: 60px;
     }
