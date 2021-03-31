@@ -13,6 +13,3 @@ Click on `dodaj szklankę` to add one cup of water you drunk, click on `usuń sz
 ## Additional description
 
 The application was created with Maciej Korsan's WTF: Co ten frontend course.
-
-
-
