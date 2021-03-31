@@ -29,10 +29,18 @@ main {
 .title {
   font-size: 55px;
   color: #ffff;
-  margin: 87px 50px 68px 50px;
+  margin: 7px 50px 68px 50px;
   display: flex;
   justify-content: center;
   opacity: 0.68;
 }
 
+
+.info {
+  padding: 16px;
+  &__icon {
+    height: 60px;
+    width: 60px;
+    }
+}
 
