@@ -20,7 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &--animated {animation: var(--animation)
+  &--animated {
+    animation: addWaterAnimation .5s ease-in-out 1;
   }
   &__number {
     font-weight: 500;
