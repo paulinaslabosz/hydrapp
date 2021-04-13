@@ -1,5 +1,5 @@
 
-@keyframes addWater {
+@keyframes addWaterAnimation {
 0% {
   transform: scale(1);
 }
@@ -10,10 +10,6 @@
   transform: scale(1);
 }
 }
-
-:root {
-  --animation: addWater .5s linear 1 alternate;
-  }
 
 .image {
   width: 280px;
