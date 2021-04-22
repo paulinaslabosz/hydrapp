@@ -25,12 +25,6 @@ if (localStorageValue) {
 
 numberGlasses.innerHTML = currentWater;
 
-// info.addEventListener("click", () => {
-//   alert(
-//     "Picie wody to niezwykle ważny element zdrowego odżywiania, pamiętaj o tym! Należy pić codziennie co najmniej 1.5 litra wody! Jedna szklanka to ok. 250 ml."
-//   );
-// });
-
 if (currentWater == 0) {
   progress.innerHTML = "Zacznij! 1.5 l to nie tak dużo!";
 } else if (currentWater == 1) {
