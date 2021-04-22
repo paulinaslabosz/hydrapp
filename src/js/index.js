@@ -1,8 +1,8 @@
 import "../scss/main.scss";
 
 // uncomment the lines below to enable PWA
-import {registerSW} from './pwa.js';
-registerSW();
+//import {registerSW} from './pwa.js';
+//registerSW();
 
 /* place your code below */
 
@@ -11,12 +11,16 @@ const deleteWater = document.querySelector(".delete--js");
 const numberGlasses = document.querySelector(".glasses--js");
 const key = new Date().toLocaleString().slice(0, 10);
 const localStorageValue = localStorage.getItem(key);
+<<<<<<< HEAD
 const info = document.querySelector(".info--js");
 const progress = document.querySelector(".text--js");
+=======
+const glass = document.querySelector('.image');
+>>>>>>> history
+
 
 let currentWater = 0;
-
-if (localStorageValue) {
+if (localStorageValue) {  
   currentWater = localStorageValue;
 } else {
   localStorage.setItem(key, 0);
@@ -24,6 +28,7 @@ if (localStorageValue) {
 
 numberGlasses.innerHTML = currentWater;
 
+<<<<<<< HEAD
 info.addEventListener("click", () => {
   alert(
     "Picie wody to niezwykle ważny element zdrowego odżywiania, pamiętaj o tym! Należy pić codziennie co najmniej 1.5 litra wody! Jedna szklanka to ok. 250 ml."
@@ -45,11 +50,14 @@ if (currentWater == 0) {
 } else if (currentWater >= 6) {
   progress.innerHTML = "Brawo! Osiągnąłeś/aś cel!";
 };
+=======
+>>>>>>> history
 
 addWater.addEventListener("click", () => {
   currentWater++;
   numberGlasses.innerHTML = currentWater;
   localStorage.setItem(key, currentWater);
+<<<<<<< HEAD
   if (currentWater == 0) {
     progress.innerHTML = "Zacznij! 1.5 l to nie tak dużo!";
   } else if (currentWater == 1) {
@@ -68,6 +76,10 @@ addWater.addEventListener("click", () => {
   
   
 });
+=======
+  glass.classList.add('animation');
+ });
+>>>>>>> history
 
 deleteWater.addEventListener("click", () => {
   if (currentWater > 0) {
