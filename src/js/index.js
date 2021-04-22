@@ -12,7 +12,7 @@ const numberGlasses = document.querySelector(".glasses--js");
 const key = new Date().toLocaleString().slice(0, 10);
 const localStorageValue = localStorage.getItem(key);
 const glass = document.querySelector('.image');
-const classCss = document.querySelector('.image-animation');
+
 
 let currentWater = 0;
 if (localStorageValue) {  
@@ -20,6 +20,7 @@ if (localStorageValue) {
 } else {
   localStorage.setItem(key, 0);
 }
+
 numberGlasses.innerHTML = currentWater;
 
 
@@ -27,6 +28,7 @@ addWater.addEventListener("click", () => {
   currentWater++;
   numberGlasses.innerHTML = currentWater;
   localStorage.setItem(key, currentWater);
+  glass.classList.add('animation');
  });
 
 deleteWater.addEventListener("click", () => {

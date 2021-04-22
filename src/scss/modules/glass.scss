@@ -20,10 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &--animated {
-    animation: addWaterAnimation .5s ease-in-out 1;
-  }
-  &__number {
+    &__number {
     font-weight: 500;
     font-size: 112px;
     line-height: 131px;
@@ -33,4 +30,10 @@
     text-align: center;
     
   }
+}
+
+
+.animation {
+  
+  animation: addWaterAnimation .5s ease-in-out 1;
 }
