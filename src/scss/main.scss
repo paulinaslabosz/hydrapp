@@ -2,6 +2,7 @@
 @import "modules/buttons.scss";
 @import "modules/glass.scss";
 @import "modules/progress.scss";
+@import "modules/info.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 html {
@@ -19,13 +20,14 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: "Roboto";
+  min-width: 375px;
+  min-height: 750px;
+  padding: 16px;
 }
 
 main {
   background: #3767ad;
-  min-width: 375px;
-  min-height: 750px;
-  padding: 16px;
+  
 }
 
 .title {

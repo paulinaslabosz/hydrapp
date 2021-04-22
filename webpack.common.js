@@ -91,13 +91,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/info.html",
       inject: true,
-      chunks: ["index", "another", "info"],
+      chunks: ["index", "another",],
       filename: "info.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/history.html",
       inject: true,
-      chunks: ["index", "another", "info", "history"],
+      chunks: ["index", "another"],
       filename: "history.html",
     }),
   ],
