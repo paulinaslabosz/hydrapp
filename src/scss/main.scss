@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #3767ad;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,10 +38,32 @@ main {
 }
 
 
-.info {
+.menu {
     &__icon {
     height: 60px;
     width: 60px;
     }
 }
 
+.navigation {
+  display: none;
+
+  &__open {
+    display: block;
+    position: absolute;
+    min-width: 300px;
+    min-height: 50px;
+    background-color: #f5e5e7;
+    border: 2px solid #000;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  &__link {
+    color: black;
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    text-decoration: none;
+
+  }
+}
