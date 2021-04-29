@@ -6,3 +6,16 @@
     justify-content: center;
     opacity: 0.68;
 }
+
+.list {
+    max-width: 300px;
+    min-height: 50px;
+    background-color: #f5e5e7;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    margin-top: 40px;
+}
