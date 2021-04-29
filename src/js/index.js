@@ -1,6 +1,6 @@
 import "../scss/main.scss";
-import "../js/history";
-// import "../js/menu.js";
+
+import "../js/menu.js";
 
 
 // uncomment the lines below to enable PWA
@@ -88,5 +88,4 @@ deleteWater.addEventListener("click", () => {
     progress.innerHTML = "Brawo! Osiągnąłeś/aś cel!";
   };
   });
-
 
