@@ -1,4 +1,32 @@
+
 .header {
-    display: block;
-    
+    &__title {
+        font-size: 55px;
+  color: #ffff;
+  margin: 7px 50px 40px 50px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.68;
+    }
+}
+
+.main__box {
+    max-width: 305px;
+    min-height: 50px;
+    background-color: #f5e5e7;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+    margin-top: 40px;
+     &--text {
+        font-size: 20px;
+        padding: 16px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+
 }
