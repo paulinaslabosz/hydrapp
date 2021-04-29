@@ -1,5 +1,7 @@
 import "../scss/main.scss";
-import "../js/menu.js";
+import "../js/history";
+// import "../js/menu.js";
+
 
 // uncomment the lines below to enable PWA
 //import {registerSW} from './pwa.js';
