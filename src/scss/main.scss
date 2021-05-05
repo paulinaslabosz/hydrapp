@@ -19,15 +19,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   font-family: "Roboto";
-  min-width: 375px;
-  min-height: 750px;
+
   padding: 16px;
 }
 
 main {
   background: #3767ad;
+  min-width: 375px;
+  min-height: 650px;
   
 }
 
